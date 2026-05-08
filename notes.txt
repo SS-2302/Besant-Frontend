@@ -1,0 +1,13 @@
+DISPLAY PROPERTY
+
+display --> property specifies if/how 
+
+POSITIONS
+
+Relative --> positioned relative to where it normally is 
+fixed --> positioned relative to the viewport
+absolute --> positioned relative to the nearest ancestor
+sticky
+static
+
+flexbox
