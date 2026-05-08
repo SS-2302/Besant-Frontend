@@ -48,3 +48,73 @@ let students=30;
 //     document.getElementById("myH1").textContent=`${username} welcome to JS`
 // }
 
+
+// TYPE CONVERSION
+// let age=window.prompt("How old are you?")
+// age=Number(age);
+// age+=1;
+// console.log(age);
+
+// let x="lemon";
+// let y="lemon";
+// let z="lemon";
+
+// x=Number(x);
+// y=String(y);
+// z=Boolean(z);
+
+// console.log(x, typeof x);
+// console.log(y, typeof y);
+// console.log(z, typeof z);
+
+
+// let age=18;
+// if (age!=18){
+//     console.log("you cannot vote");    
+// }
+// else{
+//     console.log("you can vote");  
+// }
+
+
+// let mark=window.prompt("Enter your mark")
+// if (mark>=80) {
+//     console.log("Grade is A");
+    
+// } else if(mark>=50 && mark<=79){
+//     console.log("Grade is B");
+    
+// }else if(mark>=20 && mark<=49){
+//     console.log("Grade is C");
+    
+// }else{
+//     console.log("You are Fail");
+    
+// }
+
+
+const CheckBox=document.getElementById("myCheckBox");
+const Visa=document.getElementById("visabtn");
+const MasterCard=document.getElementById("mcbtn");
+const Rupay=document.getElementById("rupaybtn");
+const Submit=document.getElementById("mySubmit");
+const SubResult=document.getElementById("subResult");
+const PaymentResult=document.getElementById("paymentResult");
+
+
+
+Submit.onclick=function(){
+    if(CheckBox.checked){
+        SubResult.textContent=`You are Subscribed`;
+    }else{
+        SubResult.textContent=`You are not Subscribed`
+    }
+
+    if(Visa.checked){
+        PaymentResult.textContent=`You paid with Visa card`;
+    }else if(MasterCard.checked){
+        PaymentResult.textContent=`You paid with martercard card`;
+    }else{
+        PaymentResult.textContent=`You paid with rupay card`
+    }
+}
