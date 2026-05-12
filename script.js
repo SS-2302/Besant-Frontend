@@ -93,28 +93,133 @@ let students=30;
 // }
 
 
-const CheckBox=document.getElementById("myCheckBox");
-const Visa=document.getElementById("visabtn");
-const MasterCard=document.getElementById("mcbtn");
-const Rupay=document.getElementById("rupaybtn");
-const Submit=document.getElementById("mySubmit");
-const SubResult=document.getElementById("subResult");
-const PaymentResult=document.getElementById("paymentResult");
+// const CheckBox=document.getElementById("myCheckBox");
+// const Visa=document.getElementById("visabtn");
+// const MasterCard=document.getElementById("mcbtn");
+// const Rupay=document.getElementById("rupaybtn");
+// const Submit=document.getElementById("mySubmit");
+// const SubResult=document.getElementById("subResult");
+// const PaymentResult=document.getElementById("paymentResult");
 
 
 
-Submit.onclick=function(){
-    if(CheckBox.checked){
-        SubResult.textContent=`You are Subscribed`;
-    }else{
-        SubResult.textContent=`You are not Subscribed`
+// Submit.onclick=function(){
+//     if(CheckBox.checked){
+//         SubResult.textContent=`You are Subscribed`;
+//     }else{
+//         SubResult.textContent=`You are not Subscribed`
+//     }
+
+//     if(Visa.checked){
+//         PaymentResult.textContent=`You paid with Visa card`;
+//     }else if(MasterCard.checked){
+//         PaymentResult.textContent=`You paid with martercard card`;
+//     }else{
+//         PaymentResult.textContent=`You paid with rupay card`
+//     }
+// }
+
+// const option1=document.getElementById("op1");
+// const option2=document.getElementById("op2");
+// const option3=document.getElementById("op3");
+// const option4=document.getElementById("op4");
+// const option5=document.getElementById("op5");
+// const Submit=document.getElementById("sub-btn");
+// const Answer=document.getElementById("answer");
+
+// Submit.onclick=function(){
+//     if(option1.checked && option2.checked && option3.checked){
+//         Answer.textContent=`Correct !`
+//     }else if(option1 || option2 || option3.checked){
+//         Answer.textContent=`The Correct answer is option1,option2,option3`
+//     }else{
+//         Answer.textContent=`Incorrect`
+//     }
+// }
+
+// let age=20;
+
+// if(age>=18){
+//     console.log("You are eligible to vote");
+// }else{
+//     console.log("You are not eligible to vote");
+// }
+
+// const result=age>18 ? "You are eligible to vote" : "You are not eligible to vote";
+// console.log(result);
+
+// let testscore=85;
+// let grade;
+// switch (true) {
+//     case testscore>=80:
+//         grade="A";
+//         break;
+//     case testscore>=70:
+//         grade="B";
+//         break;
+//     case testscore>=60:
+//         grade="C";
+//         break;
+//     case testscore>=50:
+//         grade="D";
+//         break;
+//     default:
+//         grade="F";
+//         break;
+// }
+
+// console.log(grade);
+
+
+// let username="ganesh kumar";
+
+// charAt()
+// const result=username.charAt(0);
+// const result2=username.charAt(7); 
+// const result=username.indexOf("a");
+// const result=username.lastIndexOf("a");
+// const result=username.trim();
+// const result=username.toLowerCase();
+// const result2=username.toUpperCase();
+
+// const result=username.startsWith(" ");
+// const result2=username.endsWith(" ");
+
+// if(result){
+//     console.log("your name cant starts with a space");
+// }else if(result2){
+//     console.log("remove the space from end");
+// }else{
+//     console.log(username);
+// }
+
+// console.log(result);
+
+
+// let phonenumber="+91-91504-65195";
+// let result=phonenumber.replaceAll("-","/");
+
+// console.log(result);
+
+// const username="Surender raj";
+
+// let firstname=username.slice(0,4);
+// let lastname=username.slice(4);
+
+// let firstname=username.slice(0,username.indexOf(" "));
+// let lastname=username.slice(username.indexOf(" ")+1);
+// console.log(firstname);
+// console.log(lastname);
+
+
+
+
+function showName() {
+      let email = document.getElementById("email").value;
+
+      let name = email.slice(0, email.indexOf("@"));
+      let Output=document.getElementById("result");
+
+      Output.textContent=`Your name is ${name}`;
+      
     }
-
-    if(Visa.checked){
-        PaymentResult.textContent=`You paid with Visa card`;
-    }else if(MasterCard.checked){
-        PaymentResult.textContent=`You paid with martercard card`;
-    }else{
-        PaymentResult.textContent=`You paid with rupay card`
-    }
-}

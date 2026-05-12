@@ -26,3 +26,5 @@ flexbox
 10questions
 5-radio
 5-checkbox
+
+ternary operator- shortcut to if() and else statements helps to assign a variable based on condition
