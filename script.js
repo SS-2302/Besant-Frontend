@@ -223,3 +223,74 @@ function showName() {
       Output.textContent=`Your name is ${name}`;
       
     }
+
+const temp=-20;
+
+// if (temp>0){
+//   console.log("the weather is good");
+// }else if(temp<=30){
+//   console.log("good weather");
+// }else{
+//   console.log("weather is bad"); 
+// }
+
+
+// if (temp>0 && temp<=30){
+//   console.log("the weather is good");
+// }else{
+//   console.log("weather is bad"); 
+// }
+
+
+// if (temp>0 || temp<=30){
+//   console.log("the weather is good");
+// }else{
+//   console.log("weather is bad"); 
+// }
+
+// const isSunny=false;
+
+// if(!isSunny){
+//   console.log("it is sunny");
+// }else{
+//   console.log("its cloudy")
+// }
+
+
+// const PI=3.14;
+
+// if(PI==3.14){
+//   console.log("this is pi");
+  
+// }else{
+//   console.log("this is not pi");
+  
+// }
+// if(PI==='3.14'){
+//   console.log("this is pi");
+  
+// }else{
+//   console.log("this is not pi");
+  
+// }
+// if(PI!=3.14){
+//   console.log("this is pi");
+  
+// }else{
+//   console.log("this is not pi"); 
+// }
+
+// for(i=10;i>=1;i--){
+//   // console.log(i);
+// }
+
+for (let i = 1; i <= 3; i++) {
+  console.log("*");
+  console.log("1");
+}
+for (let i = 1; i = 1; i++) {
+  console.log("***");
+  console.log("###");
+  console.log("$$$");
+}
+

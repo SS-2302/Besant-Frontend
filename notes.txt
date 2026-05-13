@@ -28,3 +28,26 @@ flexbox
 5-checkbox
 
 ternary operator- shortcut to if() and else statements helps to assign a variable based on condition
+
+Logical Operators - used to combine or manipulate boolean values(true/false)
+
+&& - AND
+|| - OR
+! - NOT
+
+strict equality Operators
+    = assignment operator  (assign values)
+    == comparison operator (compare if values are equal)
+    === strict equality operator (compare if values and datatypes are equal)
+    != inequality operator
+    !== strict inequality operator
+
+
+control statements
+    for
+syntax:
+    for(start,end,++/--){
+
+    }
+
+    
