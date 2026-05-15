@@ -51,3 +51,11 @@ syntax:
     }
 
     
+Functions - a section of reusable code,
+            declared only once,
+
+            
+create a function to combine firstname and lastname to return as a username
+function --> capitalize the first word(output: Ganesh Kumar)
+create a function that return the square root
+create a function to findout the area of circle

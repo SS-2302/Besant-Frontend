@@ -284,13 +284,77 @@ const temp=-20;
 //   // console.log(i);
 // }
 
-for (let i = 1; i <= 3; i++) {
-  console.log("*");
-  console.log("1");
-}
-for (let i = 1; i = 1; i++) {
-  console.log("***");
-  console.log("###");
-  console.log("$$$");
-}
+// for (let i = 1; i <= 3; i++) {
+//   console.log("*");
+//   console.log("1");
+// }
+// for (let i = 1; i = 1; i++) {
+//   console.log("***");
+//   console.log("###");
+//   console.log("$$$");
+// }
 
+
+
+// function add(a,b){
+//   return a+b;
+// }
+// const addresult=add(5,2);
+// console.log(addresult);
+
+
+// function sub(a,b){
+//   return a-b;
+// }
+// const subResult=add(10,2);
+// console.log(subResult);
+
+
+// function mul(a,b){
+//   return a*b;
+// }
+// const mulResult=mul(5,2);
+// console.log(mulResult);
+
+
+// function iseven(number){
+//   if(number%2==0){
+//     return true;
+//   }else{
+//     return false;
+//   }
+
+//   return number%2==0 ? true : false;
+// }
+// function isodd(number){
+//   if(number%2!==0){
+//     return true;
+//   }else{
+//     return false;
+//   }
+// }
+
+
+// console.log(iseven(13));
+// console.log(isodd(11));
+
+// function isValidEmail(email){
+//   if(email.includes("@")){
+//     return true;
+//   }else{
+//     return false;
+//   }
+// }
+
+// console.log(isValidEmail("ss@gmail"));
+
+
+// function isValidSite(text){
+//   if(text.includes(".com")){
+//     return true;
+//   }else{
+//     return false;
+//   }
+// }
+
+// console.log(isValidSite("ss@gmail.com"));
