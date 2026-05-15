@@ -369,8 +369,52 @@ const temp=-20;
 //   result.textContent=`Your name is ${firstname} ${lastname}`;
 // }
 
-function sqrroot(){
-  let number=document.getElementById("number").value;
-  let result=document.getElementById("result");
-  result.textContent=`The square root of ${number} is ${Math.sqrt(number)}`;
+// function sqrroot(){
+//   let number=document.getElementById("number").value;
+//   let result=document.getElementById("result");
+//   result.textContent=`The square root of ${number} is ${Math.sqrt(number)}`;
+// }
+
+
+// let x=20;
+// function func1(){
+//   let x=1; //first priority goes for local variable
+//   console.log(x);
+// }
+
+// func1();
+
+// let fruits=['apple','banana','orange'];
+// fruits.push("coconut");
+// fruits.pop();
+// fruits.unshift("mango");
+
+// console.log(fruits);
+
+
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+
+// let noOFfruits=fruits.length;
+// console.log(noOFfruits);
+
+// let index=fruits.indexOf("apple");
+// console.log(index);
+
+let fruits=['apple','banana','orange'];
+
+// for(i=0;i<fruits.length;i++){
+//   console.log(fruits[i].toUpperCase());
+// }
+
+// for(i=fruits.length-1;i>=0;i--){
+//   console.log(fruits[i].toUpperCase());
+// }
+
+// fruits.sort();
+fruits.sort().reverse();
+
+for(let fruit of fruits){
+  console.log(fruit);
 }

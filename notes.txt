@@ -59,3 +59,7 @@ create a function to combine firstname and lastname to return as a username
 function --> capitalize the first word(output: Ganesh Kumar)
 create a function that return the square root
 create a function to findout the area of circle
+
+variable scope - where a variable  is recognized and accessible(local and global)
+
+Arrays- list of values that can store more than 1 value
