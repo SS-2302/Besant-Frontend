@@ -358,3 +358,19 @@ const temp=-20;
 // }
 
 // console.log(isValidSite("ss@gmail.com"));
+
+
+// function username(){
+//   let firstname=document.getElementById("firstname").value;
+//   let lastname=document.getElementById("lastname").value;
+
+//   // return `${firstname} ${lastname}`;
+//   let result=document.getElementById("result");
+//   result.textContent=`Your name is ${firstname} ${lastname}`;
+// }
+
+function sqrroot(){
+  let number=document.getElementById("number").value;
+  let result=document.getElementById("result");
+  result.textContent=`The square root of ${number} is ${Math.sqrt(number)}`;
+}
