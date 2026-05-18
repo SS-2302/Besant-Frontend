@@ -402,7 +402,7 @@ const temp=-20;
 // let index=fruits.indexOf("apple");
 // console.log(index);
 
-let fruits=['apple','banana','orange'];
+// let fruits=['apple','banana','orange'];
 
 // for(i=0;i<fruits.length;i++){
 //   console.log(fruits[i].toUpperCase());
@@ -413,8 +413,49 @@ let fruits=['apple','banana','orange'];
 // }
 
 // fruits.sort();
-fruits.sort().reverse();
+// fruits.sort().reverse();
 
-for(let fruit of fruits){
-  console.log(fruit);
+// for(let fruit of fruits){
+//   console.log(fruit);
+// }
+
+// let numbers=[5,2,9,1,5,6];
+// console.log(...numbers);
+
+
+// let maximum=Math.max(...numbers);
+// let minimum=Math.min(...numbers);
+// console.log(maximum);
+// console.log(minimum);
+
+// let username="Surender Raj";
+// console.log(username);
+
+// let chars=[...username];
+// console.log(chars);
+
+// let fruits=['apple','banana','orange'];
+// let morefruits=['grape','kiwi'];
+
+// let all=[...fruits,...morefruits]
+// console.log(fruits);
+// console.log(all);
+
+const food1="biriyani";
+const food2="pizza";
+const food3="burger";
+const food4="pasta";
+
+function getFood(...foods){
+  return foods;
 }
+
+function openFridge(...foods){
+  console.log(foods);
+}
+
+openFridge(food1,food2,food3,food4);
+
+
+
+
