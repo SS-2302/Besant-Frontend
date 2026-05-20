@@ -441,21 +441,72 @@ const temp=-20;
 // console.log(fruits);
 // console.log(all);
 
-const food1="biriyani";
-const food2="pizza";
-const food3="burger";
-const food4="pasta";
+// const food1="biriyani";
+// const food2="pizza";
+// const food3="burger";
+// const food4="pasta";
 
-function getFood(...foods){
-  return foods;
+// function getFood(...foods){
+//   return foods;
+// }
+
+// function openFridge(...foods){
+//   console.log(foods);
+// }
+
+// openFridge(food1,food2,food3,food4);
+
+
+// 18/5 tasks //////////////////////////////////////////////////
+// const student={
+//   name:"Surender",
+//   age:"21",
+//   course:"Python Developer",
+//   city:"Chennai"
+// }
+
+// const{name,age,...stud1}=student;
+// console.log(name);
+// console.log(age);
+// console.log(stud1);
+
+
+// const numbers=[1,2,3];
+
+// const newNumbers=[...numbers,4,5,6];
+// const prevNumbers=[-2,-1,0,...numbers];
+
+// console.log(newNumbers);
+// console.log(prevNumbers);
+
+// hello(leave);
+
+
+// function goodbye(){
+//   console.log("Goodbye World");
+// }
+
+// function leave(){
+//   console.log("Leaving the world");
+// }
+
+// function hello(callback){
+//   setTimeout(function(){
+//     console.log("Hello World");
+//     callback();
+//   },2000);
+// }
+
+sum(displayWeb,5,10);
+function sum(callback,x,y){
+  let result=x+y;
+  callback(result);
 }
 
-function openFridge(...foods){
-  console.log(foods);
+function displayConsole(result){
+  console.log(`The sum is ${result}`);
 }
 
-openFridge(food1,food2,food3,food4);
-
-
-
-
+function displayWeb(result){
+  document.getElementById("myH1").textContent=result;
+}
