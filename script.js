@@ -497,16 +497,47 @@ const temp=-20;
 //   },2000);
 // }
 
-sum(displayWeb,5,10);
-function sum(callback,x,y){
-  let result=x+y;
-  callback(result);
+// sum(displayWeb,5,10);
+// function sum(callback,x,y){
+//   let result=x+y;
+//   callback(result);
+// }
+
+// function displayConsole(result){
+//   console.log(`The sum is ${result}`);
+// }
+
+// function displayWeb(result){
+//   document.getElementById("myH1").textContent=result;
+// }
+
+
+
+function calculateGrade(score,totalScore,name,callback){
+  let percentage=(score/totalScore)*100
+
+  let grade;
+  if (percentage>=90){
+    grade='A';
+  }else if(percentage>=75){
+    grade='B';
+  }else if(percentage>=50){
+    grade='C';
+  }else{
+    grade='F'
+  }
+
+  const student={
+    name,
+    grade
+  }
+
+  callback(student)
 }
 
-function displayConsole(result){
-  console.log(`The sum is ${result}`);
-}
+calculateGrade(25,100,"john",displayGrade)
 
-function displayWeb(result){
-  document.getElementById("myH1").textContent=result;
+function displayGrade(student){
+  console.log(`hello ${student.name}! Your final grade for the course is ${student.grade}`);
+  
 }
