@@ -76,3 +76,8 @@ asynchronous-random flow
 asynchronous operations ---> reading the files,network requests,interacting with databases
 
 define the callback function
+
+21/5/26
+
+forEach() - it is a method to iterate over the element of an array and apply a specified function(callback) to each element
+syntax = array.forEach(callback)

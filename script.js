@@ -513,31 +513,74 @@ const temp=-20;
 
 
 
-function calculateGrade(score,totalScore,name,callback){
-  let percentage=(score/totalScore)*100
+// function calculateGrade(score,totalScore,name,callback){
+//   let percentage=(score/totalScore)*100
 
-  let grade;
-  if (percentage>=90){
-    grade='A';
-  }else if(percentage>=75){
-    grade='B';
-  }else if(percentage>=50){
-    grade='C';
-  }else{
-    grade='F'
-  }
+//   let grade;
+//   if (percentage>=90){
+//     grade='A';
+//   }else if(percentage>=75){
+//     grade='B';
+//   }else if(percentage>=50){
+//     grade='C';
+//   }else{
+//     grade='F'
+//   }
 
-  const student={
-    name,
-    grade
-  }
+//   const student={
+//     name,
+//     grade
+//   }
 
-  callback(student)
+//   callback(student)
+// }
+
+// calculateGrade(25,100,"john",displayGrade)
+
+// function displayGrade(student){
+//   console.log(`hello ${student.name}! Your final grade for the course is ${student.grade}`);
+  
+// }
+
+// let numbers=[1,2,3,4,5,6];
+
+// // numbers.forEach(double)
+// numbers.forEach(square)
+// numbers.forEach(display)
+
+
+
+// function double(element,index,array){
+//   array[index]=element*2;
+// }
+
+// function  display(element){
+//   console.log(element);
+// }
+
+// function square(element,index,array){
+//   array[index]=Math.pow(element,2)
+// }
+
+let fruits=["apple","orange","banana","coconut"];
+
+// fruits.forEach(uppercase)
+// fruits.forEach(capitalize)
+fruits.forEach(lastcapitalize)
+fruits.forEach(display);
+
+
+function uppercase(element,index,array){
+  array[index]=element.toUpperCase()
 }
 
-calculateGrade(25,100,"john",displayGrade)
+function capitalize(element,index,array){
+  array[index]=element.charAt(0).toUpperCase()+element.slice(1)
+}
+function lastcapitalize(element,index,array){
+  array[index]=element.slice(0,element.length-1)+element.charAt(element.length-1).toUpperCase()
+}
 
-function displayGrade(student){
-  console.log(`hello ${student.name}! Your final grade for the course is ${student.grade}`);
-  
+function  display(element){
+  console.log(element);
 }
