@@ -10,7 +10,7 @@
 // console.log(lastname);
 // console.log(email);
 
-let students=30;
+// let students=30;
 // students=students+1;
 // students=students-1;
 // students=students*2;
@@ -562,25 +562,142 @@ const temp=-20;
 //   array[index]=Math.pow(element,2)
 // }
 
-let fruits=["apple","orange","banana","coconut"];
+// let fruits=["apple","orange","banana","coconut"];
 
 // fruits.forEach(uppercase)
 // fruits.forEach(capitalize)
-fruits.forEach(lastcapitalize)
-fruits.forEach(display);
+// fruits.forEach(lastcapitalize)
+// fruits.forEach(display);
 
 
-function uppercase(element,index,array){
-  array[index]=element.toUpperCase()
-}
+// function uppercase(element,index,array){
+//   array[index]=element.toUpperCase()
+// }
 
-function capitalize(element,index,array){
-  array[index]=element.charAt(0).toUpperCase()+element.slice(1)
-}
-function lastcapitalize(element,index,array){
-  array[index]=element.slice(0,element.length-1)+element.charAt(element.length-1).toUpperCase()
-}
+// function capitalize(element,index,array){
+//   array[index]=element.charAt(0).toUpperCase()+element.slice(1)
+// }
+// function lastcapitalize(element,index,array){
+//   array[index]=element.slice(0,element.length-1)+element.charAt(element.length-1).toUpperCase()
+// }
 
-function  display(element){
-  console.log(element);
+// function  display(element){
+//   console.log(element);
+// }
+
+// let price=["10.99", "5.50", "20.00"]
+
+// price.forEach(priceTag)
+// price.forEach(display)
+
+// function display(element){
+//   console.log(element);
+// }
+
+// function priceTag(element,index,array){
+//   array[index]=`Item ${index+1}: $`+element
+// }
+
+// let titles=['Learn JavaScript Fast', 'How to Use Loops', 'Array Methods Guide']
+
+// let slugs=[]
+
+// titles.forEach(lowercase)
+// titles.forEach(replace)
+// titles.forEach(display)
+
+// function display(element){
+//   console.log(element);
+  
+// }
+
+
+// function lowercase(element,index,array){
+//   array[index]=element.toLowerCase()
+// }
+
+// function replace(element,index,array){
+//   array[index]=element.replaceAll(' ','-')
+//   slugs.push(array[index])
+// }
+
+// const numbers=[1,2,3,4,5,6];
+
+// const squares=numbers.map(square)
+// const cubes=numbers.map(cube)
+
+// function square(element){
+//   return Math.pow(element,2)
+// }
+// function cube(element){
+//   return Math.pow(element,3)
+// }
+
+// console.log(squares);
+// console.log(cubes);
+
+
+// const students=["virat","tim","rajat"]
+
+// const uppercaseStudents=students.map(uppercase)
+
+// function uppercase(element){
+//   return element.toUpperCase();
+// }
+
+// console.log(uppercaseStudents);
+
+// const dates=["2024-1-10","2022-4-29"]
+
+// const newDate=dates.map(formatDate)
+
+// function formatDate(element){
+//   const parts=element.split("-")
+//   return`${parts[2]}/${parts[1]}/${parts[0]}`
+// }
+
+// console.log(newDate);
+
+
+// const numbers=[1,2,3,4,5,6];
+// let evenNumber=numbers.filter(isEven);
+
+
+
+// function isEven(element){
+//   return element% 2 == 0
+// }
+
+// console.log(evenNumber);
+
+// const ages=[16, 17, 18, 19, 20, 60];
+
+// const adults=ages.filter(isAdult)
+
+// function isAdult(element){
+//   return element>=18
+// }
+
+// console.log(adults);
+
+// const words=['apple','orange','pomogranate','coconut']
+
+// const sWords=words.filter(shortwords)
+// console.log(sWords);
+
+
+// function shortwords(element){
+//   return element.length>=6;
+// }
+
+const prices=[5,30,10,25,15,20];
+
+const total = prices.reduce(sum)
+
+console.log(`${total.toFixed(2)}`);
+
+
+
+function sum(accumulator,element){
+  return accumulator+element
 }

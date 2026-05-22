@@ -81,3 +81,11 @@ define the callback function
 
 forEach() - it is a method to iterate over the element of an array and apply a specified function(callback) to each element
 syntax = array.forEach(callback)
+
+
+22/5/26
+Map() - it accepts the callback and applies the fuction to each element of an array then return a new array
+
+filter() - creates a new array by filtering out an element
+
+.reduce()
