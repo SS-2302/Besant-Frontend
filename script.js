@@ -690,14 +690,72 @@ const temp=-20;
 //   return element.length>=6;
 // }
 
-const prices=[5,30,10,25,15,20];
+// const prices=[5,30,10,25,15,20];
 
-const total = prices.reduce(sum)
+// const total = prices.reduce(sum)
 
-console.log(`${total.toFixed(2)}`);
+// console.log(`${total.toFixed(2)}`);
 
 
 
-function sum(accumulator,element){
-  return accumulator+element
-}
+// function sum(accumulator,element){
+//   return accumulator+element
+// }
+
+
+// function hello(){
+//   console.log("hello");
+  
+// }
+// hello()
+
+// const hello = function hello(){
+//   console.log("hello");
+  
+// }
+
+// console.log(hello());
+
+
+// function hello(){
+//   console.log("hello");
+  
+// }
+
+// setTimeout(hello,3000)
+
+// const numbers=[1,2,3,4,5,6]
+
+// const squares=numbers.map(square)
+// const squares=numbers.map(function(element){
+//   return Math.pow(element,2)
+// })
+
+
+// function square(element){
+//   return Math.pow(element,2)
+// }
+// console.log(squares);
+
+// const squares=numbers.map(function(element){
+//   return Math.pow(element,3)
+// })
+
+// console.log(squares);
+
+// const hello =()=> console.log("hello");
+// console.log(hello());
+
+
+// const hello=(name,age)=>{console.log(`hello ${name}`)
+//                     (console.log(`age is ${age}`));
+// }
+
+// console.log(hello("ss",34));
+
+
+const numbers=[1,2,3,4,5,6];
+
+const squares=numbers.map((element)=>Math.pow(element,2));
+
+console.log(squares~);

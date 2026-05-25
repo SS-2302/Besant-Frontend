@@ -89,3 +89,18 @@ Map() - it accepts the callback and applies the fuction to each element of an ar
 filter() - creates a new array by filtering out an element
 
 .reduce()
+
+25/5/26
+
+function declaration - define a reusable block of code that perform a specific task
+
+function expression - a way to define function as values or variables
+
+//callbacks in asynchronous functions
+//HOC-Higher Order Functions
+//closures
+//Event Listeners
+
+arrow functions - a concise way to write function expression good for simple function  that we are use only once
+
+syntax --- (parameter)=>
