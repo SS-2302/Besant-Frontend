@@ -104,3 +104,19 @@ function expression - a way to define function as values or variables
 arrow functions - a concise way to write function expression good for simple function  that we are use only once
 
 syntax --- (parameter)=>
+
+Authentication and Authorization Module
+
+OOPS - Object Oriented Programming Structures - collection of class,properties,methods and classes
+
+Object - a collection of related properties and/or methods can represent real world objects(people, products, places)
+
+object={key: value,function()}
+
+class{ properties, methods,objects}
+
+THIS = reference to the object where this is used (the object depends on the immediate context)
+
+person.name=this.name;
+
+constructor = special method for defining the properties and methods of objects

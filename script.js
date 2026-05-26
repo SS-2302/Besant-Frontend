@@ -754,8 +754,53 @@ const temp=-20;
 // console.log(hello("ss",34));
 
 
-const numbers=[1,2,3,4,5,6];
+// const numbers=[1,2,3,4,5,6];
 
-const squares=numbers.map((element)=>Math.pow(element,2));
+// const squares=numbers.map((element)=>Math.pow(element,2));
 
-console.log(squares~);
+// console.log(squares);
+
+
+// const person1={
+//   firstname:"Ganesh",
+//   lastname:"kumar",
+//   age:28,
+//   isEmployed:true,
+
+//   sayHello: function(){console.log("hello");
+//   sayBye: ()=> {console.log("bye");
+//   }
+//   }
+// }
+
+// // . => dot operator
+// console.log(person1);
+// console.log(person1.firstname);
+// console.log(person1.age);
+// person1.sayHello()
+// person1.sayBye()
+
+// const person1={
+//   firstname:"Ganesh",
+//   lastname:"kumar",
+
+//   sayHello: function(){console.log(`hi ${this.firstname}`);
+// }
+
+// }
+
+// person1.sayHello()
+
+
+function car(make,model,year,color){
+  this.make=make,
+  this.model=model,
+  this.year=year,
+  this.color=color
+}
+
+const car1=new car("tata","sierra",2020,"red");
+const car2=new car("hyundai","creta",2022,"black")
+
+console.log(car1);
+console.log(car2);
