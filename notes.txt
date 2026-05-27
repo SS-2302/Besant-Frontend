@@ -120,3 +120,14 @@ THIS = reference to the object where this is used (the object depends on the imm
 person.name=this.name;
 
 constructor = special method for defining the properties and methods of objects
+
+classes -(ES6 feature)- provides a more
+structure and cleaner way to work with
+objects conapred to traditional construtor
+functions.
+
+class -static,super
+
+Static Keyword = Keyword that defines properties or methods that belong only to a class itself rather than the object creted from that class (class owns anything static, not the object)
+
+object,class,container,this keyword

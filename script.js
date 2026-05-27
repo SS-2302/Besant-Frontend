@@ -792,15 +792,37 @@ const temp=-20;
 // person1.sayHello()
 
 
-function car(make,model,year,color){
-  this.make=make,
-  this.model=model,
-  this.year=year,
-  this.color=color
+// function car(make,model,year,color){
+//   this.make=make,
+//   this.model=model,
+//   this.year=year,
+//   this.color=color
+// }
+
+// const car1=new car("tata","sierra",2020,"red");
+// const car2=new car("hyundai","creta",2022,"black")
+
+// console.log(car1);
+// console.log(car2);
+
+
+class products{
+  constructor(name,price){
+    this.name=name;
+    this.price=price;
+  }
+
+  displayProduct(){
+    console.log(`product: ${this.name}`);
+    console.log(`price: ${this.price}`);
+    
+  }
+
+  calculateTotal
 }
 
-const car1=new car("tata","sierra",2020,"red");
-const car2=new car("hyundai","creta",2022,"black")
+const product1=new products("iphone",93475)
 
-console.log(car1);
-console.log(car2);
+product1.displayProduct()
+
+const total = product1
