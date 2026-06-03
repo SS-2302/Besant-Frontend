@@ -131,3 +131,13 @@ class -static,super
 Static Keyword = Keyword that defines properties or methods that belong only to a class itself rather than the object creted from that class (class owns anything static, not the object)
 
 object,class,container,this keyword
+
+03/06
+
+destructuring - extract values from arrays and objects then assign them to variables in a convenient way
+
+[] = to perform array destructuring
+{} == to perform object destructuring
+
+
+nested objects - objects inside another object allow us to represent more complex data structures child object is enclosed with a parent object

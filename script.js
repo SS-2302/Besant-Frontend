@@ -859,54 +859,142 @@ const temp=-20;
 // console.log(rectangle.width);
 
 
-class person{
-  constructor(firstname,lastname,age){
-    this.firstname=firstname;
-    this.lastnmae=lastname;
-    this.age=age;
-  }
+// class person{
+//   constructor(firstname,lastname,age){
+//     this.firstname=firstname;
+//     this.lastnmae=lastname;
+//     this.age=age;
+//   }
 
-  set firstname(newFirstName){
-    if(typeof newFirstName === "string" && newFirstName.length>0){
-      this._firstname=newFirstName
-    }else{
-      console.error("first name must be non empty string")
-    }
-  }
+//   set firstname(newFirstName){
+//     if(typeof newFirstName === "string" && newFirstName.length>0){
+//       this._firstname=newFirstName
+//     }else{
+//       console.error("first name must be non empty string")
+//     }
+//   }
 
-  set lastname(newLastName){
-    if(typeof newLastName === "string" && newLastName.length>0){
-      this._lastname=newLastName
-    }else{
-      console.error("last name must be non empty string")
-    }
-  }
+//   set lastname(newLastName){
+//     if(typeof newLastName === "string" && newLastName.length>0){
+//       this._lastname=newLastName
+//     }else{
+//       console.error("last name must be non empty string")
+//     }
+//   }
 
-  set age(newAge){
-    if(typeof newAge === "number" && newAge.length>0){
-      this._age=newAge
-    }else{
-      console.error("age must be non negative number")
-    }
-  }
+//   set age(newAge){
+//     if(typeof newAge === "number" && newAge.length>0){
+//       this._age=newAge
+//     }else{
+//       console.error("age must be non negative number")
+//     }
+//   }
 
-  get firstname(){
-    return this._firstname
-  }
-  get lastname(){
-    return this._lastname
-  }
-  get age(){
-    return this._age
-  }
-  get fullname(){
-    return this._firstname+ " "+this._lastname
-  }
-}
+//   get firstname(){
+//     return this._firstname
+//   }
+//   get lastname(){
+//     return this._lastname
+//   }
+//   get age(){
+//     return this._age
+//   }
+//   get fullname(){
+//     return this._firstname+ " "+this._lastname
+//   }
+// }
 
-const Person=new person("carrot","apple", 22)
+// const Person=new person("carrot","apple", 22)
 
-console.log(Person.firstname);
-console.log(Person.lastname);
-console.log(Person.age);
-console.log(Person.fullname);
+// console.log(Person.firstname);
+// console.log(Person.lastname);
+// console.log(Person.age);
+// console.log(Person.fullname);
+
+
+// let a=1;
+// let b=2;
+
+// [a,b] =[b,a]
+
+// console.log(a,b);
+// console.log(b);
+
+// const colors=["red","green","blue","white",'yellow'];
+
+// [colors[0],colors[3]]=[colors[3],colors[0]];
+
+// console.log(colors);
+
+// const [firstcolor, secondcolor, thirdcolor, ...extra]=colors;
+
+// console.log(firstcolor);
+// console.log(secondcolor);
+// console.log(thirdcolor);
+// console.log(extra);
+
+// const person1={
+//   firstname: "ganesh",
+//   lastname: "kumar",
+//   age: 20,
+//   job: "driver",
+// }
+// const person2={
+//   firstname: "Surender",
+//   lastname: "raj",
+//   age: 25,
+//   job: "manager",
+// }
+
+// const {firstname,lastname,age,job} = person1;
+
+// console.log(firstname);
+// console.log(age);
+
+// function displayPerson({firstname,lastname,age}){
+//  console.log(`the firstname is ${firstname}`);
+ 
+// }
+
+// displayPerson(person1)
+
+
+// const person={
+//   fullname: "Surender Raj",
+//   age: 20,
+//   isStudent: true,
+//   hobbies: ["singing","playing","drawing"],
+//   address: {
+//     street: "10,rose garden",
+//     city: "chennai",
+//     country: "india"
+//   }
+// }
+
+// console.log(person.fullname);
+// console.log(person.hobbies[2]);
+// console.log(person.address.city);
+
+// for(const property in person.address){
+//   console.log(person.address[property]);
+// }
+
+// class person{
+//   constructor(name,age, ...address){
+//     this.name=name;
+//     this.age=age;
+//     this.address=address;
+//   }
+// }
+
+// class address{
+//   constructor(street,city,country){
+//     this.street=street;
+//     this.city=city;
+//     this.country=country;
+//   }
+// }
+
+// const person1=new person("aslam",20,"rose garden","chennai","india")
+
+// console.log(person1);
