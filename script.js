@@ -806,23 +806,107 @@ const temp=-20;
 // console.log(car2);
 
 
-class products{
-  constructor(name,price){
-    this.name=name;
-    this.price=price;
-  }
+// class products{
+//   constructor(name,price){
+//     this.name=name;
+//     this.price=price;
+//   }
 
-  displayProduct(){
-    console.log(`product: ${this.name}`);
-    console.log(`price: ${this.price}`);
+//   displayProduct(){
+//     console.log(`product: ${this.name}`);
+//     console.log(`price: ${this.price}`);
     
+//   }
+
+//   calculateTotal
+// }
+
+// const product1=new products("iphone",93475)
+
+// product1.displayProduct()
+
+// const total = product1
+
+// class rectangle{
+//   constructor(width,height){
+//     this.width=width;
+//     this.height=height;
+//   }
+
+//   set width(newWidth){
+//     if(newWidth > 0){
+//       this._width=newWidth;
+//     }else{
+//       console.error("width must be a positive number")
+//     }
+//   }
+
+//   set height(newheight){
+//     if(newheight > 0){
+//       this._height=newheight;
+//     }else{
+//       console.error("height must be a positive number")
+//     }
+//   }
+
+//   get height(){
+//     return this._height
+//   }
+// }
+
+// const Rect=new rectangle(5,7)
+
+// console.log(rectangle.width);
+
+
+class person{
+  constructor(firstname,lastname,age){
+    this.firstname=firstname;
+    this.lastnmae=lastname;
+    this.age=age;
   }
 
-  calculateTotal
+  set firstname(newFirstName){
+    if(typeof newFirstName === "string" && newFirstName.length>0){
+      this._firstname=newFirstName
+    }else{
+      console.error("first name must be non empty string")
+    }
+  }
+
+  set lastname(newLastName){
+    if(typeof newLastName === "string" && newLastName.length>0){
+      this._lastname=newLastName
+    }else{
+      console.error("last name must be non empty string")
+    }
+  }
+
+  set age(newAge){
+    if(typeof newAge === "number" && newAge.length>0){
+      this._age=newAge
+    }else{
+      console.error("age must be non negative number")
+    }
+  }
+
+  get firstname(){
+    return this._firstname
+  }
+  get lastname(){
+    return this._lastname
+  }
+  get age(){
+    return this._age
+  }
+  get fullname(){
+    return this._firstname+ " "+this._lastname
+  }
 }
 
-const product1=new products("iphone",93475)
+const Person=new person("carrot","apple", 22)
 
-product1.displayProduct()
-
-const total = product1
+console.log(Person.firstname);
+console.log(Person.lastname);
+console.log(Person.age);
+console.log(Person.fullname);
