@@ -998,3 +998,64 @@ const temp=-20;
 // const person1=new person("aslam",20,"rose garden","chennai","india")
 
 // console.log(person1);
+
+
+// const fruits=[
+//   {name:"apple",color:"red",calories:120},
+//   {name:"orange",color:"orange",calories:10},
+//   {name:"banana",color:"yellow",calories:130},
+//   {name:"grapes",color:"purple",calories:70},
+// ]
+
+// fruits.push({name:"coconut",color:"white",calories:90})
+// // fruits.splice(1,2)
+// console.log(fruits);
+
+// fruits.forEach((fruit => console.log(fruit.calories)));
+
+// const fruitname=fruits.map(fruit => fruit.name);
+// const yellowfruits=fruits.filter(fruit => fruit.color==="yellow");
+// console.log(yellowfruits);
+
+
+// const maxFruit=fruits.reduce((max, fruit) =>fruit.calories > max.calories ? fruit : max)
+
+// console.log(maxFruit.calories);
+
+// const minFruit=fruits.reduce((max, fruit) =>fruit.calories < max.calories ? fruit : max)
+
+// console.log(minFruit.calories);
+
+// function outer(){
+
+//   let message='hello'
+
+//   function inner(){
+//     console.log(message);
+    
+//   }
+//   inner()
+// }
+
+// outer();
+function createCounter(){
+
+  let count=0;
+  function increment(){
+  
+  count++;
+  console.log(`count increased to ${count}`);
+  
+}
+
+return {increment}
+}
+
+const counter = createCounter()
+
+counter.increment()
+counter.increment()
+counter.increment()
+counter.increment()
+counter.increment()
+counter.increment()

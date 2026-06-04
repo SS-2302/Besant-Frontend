@@ -141,3 +141,9 @@ destructuring - extract values from arrays and objects then assign them to varia
 
 
 nested objects - objects inside another object allow us to represent more complex data structures child object is enclosed with a parent object
+
+04/06
+
+array of objects
+
+closures - a function is defined inside another function 
