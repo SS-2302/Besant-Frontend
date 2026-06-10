@@ -144,6 +144,32 @@ nested objects - objects inside another object allow us to represent more comple
 
 04/06
 
-array of objects
+Array of objects 
 
-closures - a function is defined inside another function 
+Closures - a function defined inside the another function, the inner function has access to the variables and scope of the outer function 
+
+allow for private variables and state maintenace 
+
+used frequntly in js framework : react, vue, angular 
+
+08/06
+
+setTimeout() ---> function in javascript tha allaows us to shedule the executuion of a function after an amount of the time 
+
+
+setTimeout(callback, delay)
+
+Synchronous - Execute line by line consecutively in a sequential manner 
+
+- code that waits for an operation to complete
+
+Asynchronous - Allow multiple operations to be performed without waiting.
+
+- does not block the execution flow and allows the progran to continue 
+
+I/O operation, network requests, fetching data 
+
+modified with: Callback, Promises, Async/wait
+
+
+

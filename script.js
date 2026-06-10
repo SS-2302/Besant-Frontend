@@ -1038,24 +1038,49 @@ const temp=-20;
 // }
 
 // outer();
-function createCounter(){
+// function createCounter(){
 
-  let count=0;
-  function increment(){
+//   let count=0;
+//   function increment(){
   
-  count++;
-  console.log(`count increased to ${count}`);
+//   count++;
+//   console.log(`count increased to ${count}`);
   
-}
+// }
 
-return {increment}
-}
+// return {increment}
+// }
 
-const counter = createCounter()
+// const counter = createCounter()
 
-counter.increment()
-counter.increment()
-counter.increment()
-counter.increment()
-counter.increment()
-counter.increment()
+// counter.increment()
+// counter.increment()
+// counter.increment()
+// counter.increment()
+// counter.increment()
+// counter.increment()
+
+
+// function sayHello(){
+//   window.alert("hello")
+// }
+
+// setTimeout(() => window.alert("hello"), 4000);
+
+// function func1(callback) {
+//   setTimeout(() => {console.log("Task 1"); 
+//                     callback() }, 3000);
+// }
+
+// function func2() {
+// console.log("Task 2");
+// console.log("Task 3");
+// console.log("Task 4");
+// }
+
+// func1(func2);
+
+// setTimeout(() => console.log("Task 1"), 5000);
+// setTimeout(() => console.log("Task 2"), 3000);
+// setTimeout(() => console.log("Task 3"), 1000);
+// setTimeout(() => console.log("Task 4"), 2000);
