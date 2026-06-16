@@ -1084,3 +1084,87 @@ const temp=-20;
 // setTimeout(() => console.log("Task 2"), 3000);
 // setTimeout(() => console.log("Task 3"), 1000);
 // setTimeout(() => console.log("Task 4"), 2000);
+
+// setTimeout(() => console.log("Task 1"), 5000);
+// setTimeout(() => console.log("Task 2"), 3000);
+// setTimeout(() => console.log("Task 3"), 1000);
+// setTimeout(() => console.log("Task 4"), 2000);
+
+// const x = 1;
+
+// try {
+
+//   console.log(x);
+// } catch(error) {
+//    console.log(error);     
+// } finally {
+//   // close file
+//   // close connection 
+//   // release resourses
+//   console.log("this always executes");
+  
+// }
+
+
+// console.log("You have reached of hte code");
+// try {
+
+//   const dividend = window.prompt("Enter the divdend: ");
+//  const divisor = window.prompt("Enter the divisor: ");
+
+//  if( divisor == 0) {
+//   throw new Error("You cant divide by zero!!")
+//  } if(isNaN(dividend) || isNaN(divisor)) {
+//   throw new Error("Values must be number!!")
+//  }
+
+//  const result = dividend / divisor;
+
+//  console.log(result);
+
+// } catch(error) {
+//   console.error(error);
+// }
+
+//  console.log("You have reached of the code");
+
+
+function task1(callback){
+  setTimeout(()=>{
+    console.log("task 1 is completed");
+    callback();
+  },1500)
+}
+function task2(){
+  setTimeout(()=>{
+    console.log("task 2 is completed");
+    
+  },1500)
+}
+function task3(){
+  setTimeout(()=>{
+    console.log("task 3 is completed");
+    
+  },1500)
+}
+function task4(){
+  setTimeout(()=>{
+    console.log("task 4 is completed");
+    
+  },1500)
+}
+
+// task1()
+// task2()
+// task3()
+// task4()
+
+task1(()=>{
+  task2(()=>{
+    task3(()=>{
+      task4(()=>{
+        
+      })
+    })
+  })
+})

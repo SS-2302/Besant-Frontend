@@ -171,5 +171,26 @@ I/O operation, network requests, fetching data
 
 modified with: Callback, Promises, Async/wait
 
+modified with: Callback, Promises, Async/wait
 
+Error Handling - An object that is created to represent a problem that occurs often with user input or establishing a connection
 
+try { } 
+
+catch { }
+
+finally { }
+
+runtime time error
+
+compile time error
+
+16/06
+
+callback hell - situation in javascript where callbacks nested within aother callbacks to the degree where the code is difficult to read
+
+this is old pattern to handle asynchronous function
+
+use promise+ async/await to avoid callback Hello
+
+promises,Async/Await, json files, API data fetching
