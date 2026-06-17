@@ -194,3 +194,14 @@ this is old pattern to handle asynchronous function
 use promise+ async/await to avoid callback Hello
 
 promises,Async/Await, json files, API data fetching
+
+17/06
+
+Promises - an object that manages asynchronous operations wrap a promise object around (asynchronous code)
+
+"i promise to return a value"
+pending -> resolved or rejected
+
+new Promise((resolve,reject)=>(asynchronous code))
+
+examples - fetching the file, DB connection, read and write the files

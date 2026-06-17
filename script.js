@@ -1129,42 +1129,105 @@ const temp=-20;
 //  console.log("You have reached of the code");
 
 
-function task1(callback){
-  setTimeout(()=>{
-    console.log("task 1 is completed");
-    callback();
-  },1500)
-}
-function task2(){
-  setTimeout(()=>{
-    console.log("task 2 is completed");
+// function task1(callback){
+//   setTimeout(()=>{
+//     console.log("task 1 is completed");
+//     callback();
+//   },1500)
+// }
+// function task2(){
+//   setTimeout(()=>{
+//     console.log("task 2 is completed");
     
-  },1500)
-}
-function task3(){
-  setTimeout(()=>{
-    console.log("task 3 is completed");
+//   },1500)
+// }
+// function task3(){
+//   setTimeout(()=>{
+//     console.log("task 3 is completed");
     
-  },1500)
-}
-function task4(){
-  setTimeout(()=>{
-    console.log("task 4 is completed");
+//   },1500)
+// }
+// function task4(){
+//   setTimeout(()=>{
+//     console.log("task 4 is completed");
     
-  },1500)
-}
+//   },1500)
+// }
 
 // task1()
 // task2()
 // task3()
 // task4()
 
-task1(()=>{
-  task2(()=>{
-    task3(()=>{
-      task4(()=>{
+// task1(()=>{
+//   task2(()=>{
+//     task3(()=>{
+//       task4(()=>{
         
-      })
-    })
+//       })
+//     })
+//   })
+// })
+
+
+
+// take the dog for a walk,clean the kitchen,take out the trash
+
+function walkDog(){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      const dogWalked=true;
+
+      if(dogWalked){
+        resolve("you walk the dog")
+      }else{
+        reject("you didn't wak the dog")
+      }
+    },3000);
   })
-})
+
+  
+}
+function cleanKitchen(){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      const kitchenCleaned=false;
+
+      if(kitchenCleaned){
+        resolve("Kitchen cleaned")
+      }else{
+        reject("Clean the kitchen")
+      }
+    },4000);
+  })
+
+  
+}
+function takeTrash(){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      const tookTrash=true;
+
+      if(tookTrash){
+        resolve("trash cleaned")
+      }else{
+        reject("Take out the trash");
+      }
+    
+    },2000);
+  })
+}
+
+walkDog().then(value=> {console.log(value); return cleanKitchen()})
+          .then(value => {console.log(value); return takeTrash()})
+          .then(value => {console.log(value); console.log("you completed all the tasks");
+          })
+          .catch(error => console.error(error))
+
+// walkDog(()=>{
+//   cleanKitchen(()=>{
+//     takeTrash(()=>console.log("you finished all tasks"))
+//   })
+// })
+
+// task - walk dog,take bath,make breakfast,clean kitchen,take trash,go to office
