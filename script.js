@@ -1185,8 +1185,6 @@ const temp=-20;
 //       }
 //     },3000);
 //   })
-
-  
 // }
 // function cleanKitchen(){
 //   return new Promise((resolve,reject)=>{
@@ -1232,22 +1230,8 @@ const temp=-20;
 
 // task - walk dog,take bath,make breakfast,clean kitchen,take trash,go to office
 
-function walkDog() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const dogWalked = true;
-
-      if (dogWalked) {
-        resolve("You walk the dog");
-      } else {
-        reject("You didnt walk the dog");
-      }
-    }, 3000);
-  });
-}
-
-// async function walkDog() {
-//   return new Promise(() => {
+// function walkDog() {
+//   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //       const dogWalked = true;
 
@@ -1260,111 +1244,182 @@ function walkDog() {
 //   });
 // }
 
-// function cleanKitchen() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       const kitchenCleaned = false;
-//       if (kitchenCleaned) {
-//         resolve("You cleaned the kitchen!!");
-//       } else {
-//         reject("You didnt clean the kitchen");
-//       }
-//     }, 4000);
-//   });
-// }
+function walkDog() {
+  return new Promise((resolve,reject) => {
+    setTimeout(() => {
+      const dogWalked = true;
 
-// function takeOutTheTrash() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       const trashTakenOut = true;
-//       if (trashTakenOut) {
-//         resolve("You take out the trash!!");
-//       } else {
-//         reject("You didnt take out the trash");
-//       }
-//     }, 2000);
-//   });
-// }
-
-// async function doTasks() {
-
-//    try {
-//    const walkDogResult = await walkDog();
-//    console.log(walkDogResult);
-
-//    const cleanKitchenResult = await cleanKitchen();
-//    console.log(cleanKitchenResult);
-
-//    const takeOutTheTrashResult = await takeOutTheTrash();
-//    console.log(takeOutTheTrashResult);
-
-//    console.log("You finished all the tasks");
-    
-//    } catch (error) {
-//        console.error(error);
-       
-//    }
-   
-// }
-
-// doTasks();
-
-// walkDog()
-//   .then((value) => {
-//     console.log(value);
-//     return cleanKitchen();
-//   })
-//   .then((value) => {
-//     console.log(value);
-//     return takeOutTheTrash();
-//   })
-//   .then((value) => {
-//     console.log(value);
-//     console.log("You finished all the task");
-//   }).catch(error => console.error(error));
-
-
-// walkDog(() => {
-//   cleanKitchen(() => {
-//     takeOutTheTrash(() => console.log("You finshed all the tasks"))
-//   })
-// })
-
-
-const names=["ram","babu","raj","kumar"];
-console.log(names);
-
-const person={
-  "name":"Prakash",
-  "age":22,
-  "isEmployed":true
+      if (dogWalked) {
+        resolve("You walk the dog");
+      } else {
+        reject("You didnt walk the dog");
+      }
+    }, 3000);
+  });
 }
-console.log(person);
 
-const persons=[
-  {
-    "name":"Prakash",
-  "age":22,
-  "isEmployed":true
-  },
-  {
-    "name":"ram",
-  "age":26,
-  "isEmployed":true
-  },
-  {
-    "name":"babu",
-  "age":20,
-  "isEmployed":true
-  },
-]
-console.log(persons);
+function takeBath(){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      const takeBath=true;
 
-const jsonString=JSON.parse(persons);
-console.log(jsonString);
+      if(takeBath){
+        resolve("you took bath")
+      }else{
+        reject("you didn't take bath")
+      }
+    },3000);
+  })
+}
 
-const jsondata=JSON.stringify(persons);
-console.log(jsondata);
+function makeBreakfast(){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      const makeBreakfast=true;
+
+      if(makeBreakfast){
+        resolve("you made break fast")
+      }else{
+        reject("you didn't made breakfast")
+      }
+    },3000);
+  })
+}
+
+function cleanKitchen() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const kitchenCleaned = true;
+      if (kitchenCleaned) {
+        resolve("You cleaned the kitchen!!");
+      } else {
+        reject("You didnt clean the kitchen");
+      }
+    }, 4000);
+  });
+}
+
+function takeOutTheTrash() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const trashTakenOut = true;
+      if (trashTakenOut) {
+        resolve("You take out the trash!!");
+      } else {
+        reject("You didnt take out the trash");
+      }
+    }, 2000);
+  });
+}
+
+function gotoOffice(){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      const gotoOffice=true;
+
+      if(gotoOffice){
+        resolve("you gone to office")
+      }else{
+        reject("you didn't go to office")
+      }
+    },3000);
+  })
+}
+
+async function doTasks() {
+
+   try {
+   const walkDogResult = await walkDog();
+   console.log(walkDogResult);
+
+   const takeBathResult = await takeBath();
+   console.log(takeBathResult);
+
+   const makeBreakfastResult = await makeBreakfast();
+   console.log(makeBreakfastResult);
+
+   const cleanKitchenResult = await cleanKitchen();
+   console.log(cleanKitchenResult);
+
+   const takeOutTheTrashResult = await takeOutTheTrash();
+   console.log(takeOutTheTrashResult);
+
+   const gotoOfficeResult = await gotoOffice();
+   console.log(gotoOfficeResult);
+
+   console.log("You finished all the tasks");
+    
+   } catch (error) {
+       console.error(error);
+       
+   }
+   
+}
+
+doTasks();
+
+walkDog()
+  .then((value) => {
+    console.log(value);
+    return cleanKitchen();
+  })
+  .then((value) => {
+    console.log(value);
+    return takeOutTheTrash();
+  })
+  .then((value) => {
+    console.log(value);
+    console.log("You finished all the task");
+  }).catch(error => console.error(error));
+
+
+walkDog(() => {
+  takeBath(() => {
+    makeBreakfast(() => {
+      cleanKitchen(()=>{
+        takeOutTheTrash(()=>{
+          gotoOffice(()=> console.log("You finshed all the tasks"))
+        })
+      })
+    })
+  })
+})
+
+
+// const names=["ram","babu","raj","kumar"];
+// console.log(names);
+
+// const person={
+//   "name":"Prakash",
+//   "age":22,
+//   "isEmployed":true
+// }
+// console.log(person);
+
+// const persons=[
+//   {
+//     "name":"Prakash",
+//   "age":22,
+//   "isEmployed":true
+//   },
+//   {
+//     "name":"ram",
+//   "age":26,
+//   "isEmployed":true
+//   },
+//   {
+//     "name":"babu",
+//   "age":20,
+//   "isEmployed":true
+//   },
+// ]
+// console.log(persons);
+
+// const jsonString=JSON.parse(persons);
+// console.log(jsonString);
+
+// const jsondata=JSON.stringify(persons);
+// console.log(jsondata);
 
 
 
