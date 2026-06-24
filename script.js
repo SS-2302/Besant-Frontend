@@ -1244,146 +1244,146 @@ const temp=-20;
 //   });
 // }
 
-function walkDog() {
-  return new Promise((resolve,reject) => {
-    setTimeout(() => {
-      const dogWalked = true;
+// function walkDog() {
+//   return new Promise((resolve,reject) => {
+//     setTimeout(() => {
+//       const dogWalked = true;
 
-      if (dogWalked) {
-        resolve("You walk the dog");
-      } else {
-        reject("You didnt walk the dog");
-      }
-    }, 3000);
-  });
-}
+//       if (dogWalked) {
+//         resolve("You walk the dog");
+//       } else {
+//         reject("You didnt walk the dog");
+//       }
+//     }, 3000);
+//   });
+// }
 
-function takeBath(){
-  return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-      const takeBath=true;
+// function takeBath(){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       const takeBath=true;
 
-      if(takeBath){
-        resolve("you took bath")
-      }else{
-        reject("you didn't take bath")
-      }
-    },3000);
-  })
-}
+//       if(takeBath){
+//         resolve("you took bath")
+//       }else{
+//         reject("you didn't take bath")
+//       }
+//     },3000);
+//   })
+// }
 
-function makeBreakfast(){
-  return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-      const makeBreakfast=true;
+// function makeBreakfast(){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       const makeBreakfast=true;
 
-      if(makeBreakfast){
-        resolve("you made break fast")
-      }else{
-        reject("you didn't made breakfast")
-      }
-    },3000);
-  })
-}
+//       if(makeBreakfast){
+//         resolve("you made break fast")
+//       }else{
+//         reject("you didn't made breakfast")
+//       }
+//     },3000);
+//   })
+// }
 
-function cleanKitchen() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const kitchenCleaned = true;
-      if (kitchenCleaned) {
-        resolve("You cleaned the kitchen!!");
-      } else {
-        reject("You didnt clean the kitchen");
-      }
-    }, 4000);
-  });
-}
+// function cleanKitchen() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const kitchenCleaned = true;
+//       if (kitchenCleaned) {
+//         resolve("You cleaned the kitchen!!");
+//       } else {
+//         reject("You didnt clean the kitchen");
+//       }
+//     }, 4000);
+//   });
+// }
 
-function takeOutTheTrash() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const trashTakenOut = true;
-      if (trashTakenOut) {
-        resolve("You take out the trash!!");
-      } else {
-        reject("You didnt take out the trash");
-      }
-    }, 2000);
-  });
-}
+// function takeOutTheTrash() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const trashTakenOut = true;
+//       if (trashTakenOut) {
+//         resolve("You take out the trash!!");
+//       } else {
+//         reject("You didnt take out the trash");
+//       }
+//     }, 2000);
+//   });
+// }
 
-function gotoOffice(){
-  return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-      const gotoOffice=true;
+// function gotoOffice(){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       const gotoOffice=true;
 
-      if(gotoOffice){
-        resolve("you gone to office")
-      }else{
-        reject("you didn't go to office")
-      }
-    },3000);
-  })
-}
+//       if(gotoOffice){
+//         resolve("you gone to office")
+//       }else{
+//         reject("you didn't go to office")
+//       }
+//     },3000);
+//   })
+// }
 
-async function doTasks() {
+// async function doTasks() {
 
-   try {
-   const walkDogResult = await walkDog();
-   console.log(walkDogResult);
+//    try {
+//    const walkDogResult = await walkDog();
+//    console.log(walkDogResult);
 
-   const takeBathResult = await takeBath();
-   console.log(takeBathResult);
+//    const takeBathResult = await takeBath();
+//    console.log(takeBathResult);
 
-   const makeBreakfastResult = await makeBreakfast();
-   console.log(makeBreakfastResult);
+//    const makeBreakfastResult = await makeBreakfast();
+//    console.log(makeBreakfastResult);
 
-   const cleanKitchenResult = await cleanKitchen();
-   console.log(cleanKitchenResult);
+//    const cleanKitchenResult = await cleanKitchen();
+//    console.log(cleanKitchenResult);
 
-   const takeOutTheTrashResult = await takeOutTheTrash();
-   console.log(takeOutTheTrashResult);
+//    const takeOutTheTrashResult = await takeOutTheTrash();
+//    console.log(takeOutTheTrashResult);
 
-   const gotoOfficeResult = await gotoOffice();
-   console.log(gotoOfficeResult);
+//    const gotoOfficeResult = await gotoOffice();
+//    console.log(gotoOfficeResult);
 
-   console.log("You finished all the tasks");
+//    console.log("You finished all the tasks");
     
-   } catch (error) {
-       console.error(error);
+//    } catch (error) {
+//        console.error(error);
        
-   }
+//    }
    
-}
+// }
 
-doTasks();
+// doTasks();
 
-walkDog()
-  .then((value) => {
-    console.log(value);
-    return cleanKitchen();
-  })
-  .then((value) => {
-    console.log(value);
-    return takeOutTheTrash();
-  })
-  .then((value) => {
-    console.log(value);
-    console.log("You finished all the task");
-  }).catch(error => console.error(error));
+// walkDog()
+//   .then((value) => {
+//     console.log(value);
+//     return cleanKitchen();
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     return takeOutTheTrash();
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     console.log("You finished all the task");
+//   }).catch(error => console.error(error));
 
 
-walkDog(() => {
-  takeBath(() => {
-    makeBreakfast(() => {
-      cleanKitchen(()=>{
-        takeOutTheTrash(()=>{
-          gotoOffice(()=> console.log("You finshed all the tasks"))
-        })
-      })
-    })
-  })
-})
+// walkDog(() => {
+//   takeBath(() => {
+//     makeBreakfast(() => {
+//       cleanKitchen(()=>{
+//         takeOutTheTrash(()=>{
+//           gotoOffice(()=> console.log("You finshed all the tasks"))
+//         })
+//       })
+//     })
+//   })
+// })
 
 
 // const names=["ram","babu","raj","kumar"];
@@ -1422,5 +1422,35 @@ walkDog(() => {
 // console.log(jsondata);
 
 
+// fetch("https://jsonplaceholder.typicode.com/user")
+//     .then(response => {
+//       if(!response.ok){
+//         throw new Error("could not able to fetch the data")
+//       }
+//       return response.json();
+//     })
+//     .then(data => console.log(data))
+//     .catch(error => console.error(error)
+//     )
 
 
+async function fetchData(){
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+
+    if(!response.ok){
+        throw new Error("could not able to fetch the data")
+      }
+      const data = await response.json();
+
+      console.log(data);
+      
+  }
+  catch(error){
+    console.log(error);
+    
+  }
+  
+}
+
+fetchData();

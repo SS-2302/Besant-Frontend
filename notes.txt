@@ -205,3 +205,11 @@ pending -> resolved or rejected
 new Promise((resolve,reject)=>(asynchronous code))
 
 examples - fetching the file, DB connection, read and write the files
+
+24/06
+
+API Fetching - fetch() - used fro making HTTP reauests to fetch resources like JSON,images,files 
+
+simplifying asynchronous data fetching in javascript and used for interacting with APIs to retrieve and send data asynchronous over the web
+
+syntax - fetch(url, {options});
