@@ -213,3 +213,16 @@ API Fetching - fetch() - used fro making HTTP reauests to fetch resources like J
 simplifying asynchronous data fetching in javascript and used for interacting with APIs to retrieve and send data asynchronous over the web
 
 syntax - fetch(url, {options});
+
+26/06
+
+BOOTSTRAP
+
+container - view for mobile, tablet, desktop
+containers - 2 types => fixed width container and full width container
+
+typography
+
+text colours
+
+grid system
